@@ -1,0 +1,19 @@
+---
+layout: default
+title: Testimonials
+permalink: /testimonials/
+---
+
+<article>
+  <div class="testimonials">
+    <h1 class="page-heading">{{ page.title}}</h1>
+    <ul>
+    {% for testimonial in site.data.testimonials.references %}
+      <li class="testimonial">
+        <div class="testimonial-body">{{ testimonial.body | markdownify }}</div>
+        <div class="testimonial-author">{{ testimonial.author }}</div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</article>
