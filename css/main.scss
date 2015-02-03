@@ -6,6 +6,7 @@
 
 
 // Our variables
+$page-max-width:   78%;
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -27,6 +28,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// Header variables
+$header-color-light:    #557ED9;
+$header-color-dark:     #0C46C9;
+$header-border-radius:  8px;
 
 
 // Using media queries with like this:

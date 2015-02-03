@@ -1,26 +1,59 @@
+@font-face {
+  font-family:"Guevara";
+  src: url("guevara.ttf") /* TTF file for CSS3 browsers */
+}
+/**
+ * Page wrapper
+ */
+.page-wrapper {
+   display: block;
+   margin:  4px auto 4px auto;
+   max-width: $page-max-width;
+}
 /**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    margin: 14px 12px 0 12px;
+    min-height: 120px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    background-color: $header-color-dark;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($header-color-dark), to($header-color-light));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, $header-color-dark, $header-color-light);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, $header-color-dark, $header-color-light);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, $header-color-dark, $header-color-light);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, $header-color-dark, $header-color-light);
+
+    -webkit-border-top-left-radius: $header-border-radius;
+    -webkit-border-top-right-radius: $header-border-radius;
+    -moz-border-radius-topleft: $header-border-radius;
+    -moz-border-radius-topright: $header-border-radius;
+    border-top-left-radius: $header-border-radius;
+    border-top-right-radius: $header-border-radius;
 }
 
-.site-title {
-    font-size: 26px;
+.logo {
+  padding-top: 12px;
+
+  .site-title {
+    margin: 22px auto 6px auto;
+    font-family: 'Guevara', sans-serif;
+    font-size: 36px;
+    color: #fff;
     line-height: 56px;
     letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    text-decoration: none;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #fff;
     }
+  }
 }
 
 .site-nav {
@@ -157,11 +190,13 @@
 }
 
 
-
+body {
+}
 /**
  * Page content
  */
 .page-content {
+    max-width: $page-max-width;
     padding: $spacing-unit 0;
 }
 
