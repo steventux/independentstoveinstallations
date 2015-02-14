@@ -15,5 +15,12 @@ credits: |
 
 # Build settings
 markdown: kramdown
-
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude:
+  - unicorn.rb
+  - README.md
+  - Procfile
+  - Gemfile
+  - Gemfile.lock
+  - config.ru
+  - vendor
+  - app.json
