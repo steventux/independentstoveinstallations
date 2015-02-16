@@ -42,7 +42,7 @@
 }
 
 .logo {
-  padding-top: 12px;
+  padding-top: 18px;
 
   .site-title {
     margin: 22px auto 6px auto;
@@ -60,8 +60,15 @@
   }
 }
 
+.hetas-approved {
+  margin-top: 18px;
+  float: right;
+  width: 130px;
+  height: 60px;
+  background: url("/images/hetas-logo.png") no-repeat;
+  text-indent: -10000px;
+}
 .site-nav {
-    float: right;
     line-height: 56px;
 
     .menu-icon {
@@ -131,6 +138,13 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    ul {
+      list-style: none;
+      li {
+        float: left;
+      }
+    }
 }
 
 .footer-heading {
