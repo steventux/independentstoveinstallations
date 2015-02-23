@@ -1,6 +1,6 @@
 @font-face {
   font-family:"Guevara";
-  src: url("/css/guevara.ttf") /* TTF file for CSS3 browsers */
+  src: url("guevara.ttf") /* TTF file for CSS3 browsers */
 }
 /**
  * Page wrapper
@@ -43,6 +43,7 @@
 
 .logo {
   padding-top: 18px;
+  display: inline-block;
 
   .site-title {
     margin: 22px auto 6px auto;
@@ -61,8 +62,9 @@
 }
 
 .hetas-approved {
-  margin-top: 18px;
-  float: right;
+  position: relative;
+  top: 18px;
+  display: inline-block;
   width: 130px;
   height: 60px;
   background: url("/images/hetas-logo.png") no-repeat;
