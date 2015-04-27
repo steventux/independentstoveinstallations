@@ -14,63 +14,74 @@
      width: 100%;
    }
 }
+
 /**
  * Site header
  */
 .site-header {
-    margin: 14px 12px 0 12px;
-    min-height: 120px;
+  margin: 14px 12px 0 12px;
+  min-height: 120px;
+  color: $header-text-color;
 
-    background-color: $header-color-dark;
-    /* Safari 4-5, Chrome 1-9 */
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($header-color-dark), to($header-color-light));
-    /* Safari 5.1, Chrome 10+ */
-    background: -webkit-linear-gradient(top, $header-color-dark, $header-color-light);
-    /* Firefox 3.6+ */
-    background: -moz-linear-gradient(top, $header-color-dark, $header-color-light);
-    /* IE 10 */
-    background: -ms-linear-gradient(top, $header-color-dark, $header-color-light);
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(top, $header-color-dark, $header-color-light);
+  background-color: $header-color-dark;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($header-color-dark), to($header-color-light));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, $header-color-dark, $header-color-light);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, $header-color-dark, $header-color-light);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, $header-color-dark, $header-color-light);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, $header-color-dark, $header-color-light);
 
-    -webkit-border-top-left-radius: $header-border-radius;
-    -webkit-border-top-right-radius: $header-border-radius;
-    -moz-border-radius-topleft: $header-border-radius;
-    -moz-border-radius-topright: $header-border-radius;
-    border-top-left-radius: $header-border-radius;
-    border-top-right-radius: $header-border-radius;
-}
+  -webkit-border-top-left-radius: $header-border-radius;
+  -webkit-border-top-right-radius: $header-border-radius;
+  -moz-border-radius-topleft: $header-border-radius;
+  -moz-border-radius-topright: $header-border-radius;
+  border-top-left-radius: $header-border-radius;
+  border-top-right-radius: $header-border-radius;
 
-.logo {
-  padding-top: 18px;
-  display: inline-block;
+  .logo {
+    padding-top: 18px;
+    display: inline-block;
 
-  .site-title {
-    margin: 22px auto 6px auto;
-    font-family: 'Guevara', sans-serif;
-    font-size: 46px;
-    color: #fff;
-    line-height: 56px;
-    letter-spacing: -1px;
-    text-decoration: none;
+    .site-title {
+      margin: 22px auto 6px auto;
+      font-family: 'Guevara', sans-serif;
+      font-size: 46px;
+      color: $header-text-color;
+      line-height: 56px;
+      letter-spacing: -1px;
+      text-decoration: none;
 
-    &,
-    &:visited {
-        color: #fff;
+      &,
+      &:visited {
+        color: $header-text-color;
+      }
     }
   }
-}
 
-.hetas-approved {
-  position: relative;
-  top: 18px;
-  display: inline-block;
-  width: 130px;
-  height: 60px;
-  background: url("/images/hetas-logo.png") no-repeat;
-  text-indent: -10000px;
-}
-.site-nav {
+  .hetas-approved {
+    float:right;
+    margin-top: 18px;
+
+    a {
+      display: inline-block;
+      width: 130px;
+      height: 60px;
+      background: url("/images/hetas-logo.png") no-repeat;
+      text-indent: -10000px;
+    }
+  }
+
+  .telephone {
+    text-align: center;
+    margin: 2px auto 2px auto;
+  }
+
+  .site-nav {
+    text-align: center;
     line-height: 56px;
 
     .menu-icon {
@@ -78,7 +89,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $header-text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -131,6 +142,11 @@
         }
     }
 }
+}
+
+
+
+
 
 
 
