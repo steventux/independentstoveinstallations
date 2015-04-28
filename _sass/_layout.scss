@@ -20,6 +20,22 @@
    }
 }
 
+/** page-body with image */
+.servicing {
+  .page-body {
+    ul {
+      margin-left: 295px;
+    }
+  }
+}
+.home {
+  .page-body {
+    ul {
+      margin-left: 265px;
+    }
+  }
+}
+
 /**
  * Site header
  */
@@ -316,6 +332,26 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.testimonials {
+  ul {
+    list-style-type: none;
+    .testimonial {
+      font-size: 0.85em;
+      margin-bottom: 26px;
+      color: #333;
+
+      .testimonial-body {
+        line-height: 1;
+        font-style: italic;
+      }
+      .testimonial-author {
+        line-height: 0.8;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 /**
