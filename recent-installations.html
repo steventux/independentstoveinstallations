@@ -7,9 +7,12 @@ permalink: /recent-installations/
 <article>
   <div class="recent-installations">
     <h1 class="page-heading">{{ page.title}}</h1>
+    <p>We're very proud of the high quality work we do. Take a look at some of our recent installations and see for yourself...</p>
     <div>
       {% for item in site.data.recent-installations %}
-      <a href="{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations"><img src="{{ item.thumb}}" alt="{{ item.title }}"/></a>
+      <div class="thumbnail-wrapper">
+        <a href="{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations"><img src="{{ item.thumb}}" alt="{{ item.title }}"/></a>
+      </div>
       {% endfor %}
     </div>
   </div>

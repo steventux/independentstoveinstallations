@@ -48,11 +48,6 @@ $header-border-radius:  8px;
     }
 }
 
-@font-face {
-  font-family:"Guevara";
-  src: url("./guevara.ttf") /* TTF file for CSS3 browsers */
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
