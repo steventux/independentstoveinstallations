@@ -112,6 +112,7 @@
     .page-link {
         color: $header-text-color;
         line-height: $base-line-height;
+        font-weight: bold;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -167,7 +168,7 @@
 
 .offers {
   width: 100%;
-  height: 36px;
+  min-height: 36px;
   line-height: 34px;
   background: #e82;
   color: #f0f0f0;
@@ -175,9 +176,6 @@
   text-align: center;
   font-weight: bold;
 }
-
-
-
 
 
 /**
@@ -368,24 +366,28 @@ body {
  *
  */
 .recent-installations {
-  .thumbnail-wrapper {
-    text-align: center;
-    margin: 2px 0px 2px 0px;
-    padding: 2px;
-    border: 1px solid #ccc;
-    display: inline-block;
-    height: 129px;
-    width: 129px;
-    a {
-      height: 125px;
-      width: 125px;
-      display: block;
-      overflow: hidden;
-      img {
-        @include vertical-align;
-        margin: 2px;
-        max-height: 250px;
-        max-width: 250px;
+  .gallery-wrapper {
+    margin: 2px auto 2px auto;
+    text-align:center;
+    .thumbnail-wrapper {
+      text-align: center;
+      margin: 2px 0px 2px 0px;
+      padding: 2px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      height: 129px;
+      width: 129px;
+      a {
+        height: 125px;
+        width: 125px;
+        display: block;
+        overflow: hidden;
+        img {
+          @include vertical-align;
+          margin: 2px;
+          max-height: 250px;
+          max-width: 250px;
+        }
       }
     }
   }

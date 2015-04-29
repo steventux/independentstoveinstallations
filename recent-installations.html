@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Recent Installations
+title: Our stove installations
 permalink: /recent-installations/
 ---
 
@@ -8,7 +8,7 @@ permalink: /recent-installations/
   <div class="recent-installations">
     <h1 class="page-heading">{{ page.title}}</h1>
     <p>We're very proud of the high quality work we do. Take a look at some of our recent installations and see for yourself...</p>
-    <div>
+    <div class="gallery-wrapper">
       {% for item in site.data.recent-installations %}
       <div class="thumbnail-wrapper">
         <a href="{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations"><img src="{{ item.thumb}}" alt="{{ item.title }}"/></a>
