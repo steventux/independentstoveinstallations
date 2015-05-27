@@ -30,17 +30,22 @@
 }
 .home {
   .page-body {
-    ul {
-      margin-left: 265px;
-    }
+    width: 60%;
+    display: inline-block;
   }
   .contact {
-    position: relative;
-    top: -220px;
+    display: inline-block;
     float:right;
     height: 200px;
     width: 200px;
     border: 2px solid black;
+    .inner {
+      border: 1px solid black;
+      margin: 2px;
+      min-height: 181px;
+      text-align: center;
+      padding: 6px;
+    }
   }
 }
 
