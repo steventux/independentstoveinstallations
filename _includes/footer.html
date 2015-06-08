@@ -13,3 +13,8 @@
 
 <script src="/lightbox/js/jquery-1.11.0.min.js"></script>
 <script src="/lightbox/js/lightbox.min.js"></script>
+<script type="text/javascript">
+  if (location.pathname === '/' && Math.floor(Math.random()*2)) {
+    $('.contact .inner p').last().detach().insertBefore('.contact .inner p').first();
+  }
+</script>
