@@ -1,8 +1,8 @@
 # Site settings
 title: Independent Stove Installations
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hetas approved wood burning stove and multi fuel stove installers, Bristol, UK. Stove, fireplace and chimney flue installation.
+description: Hetas approved wood burning stove and multi fuel stove installers, Bristol, UK. Stove, fireplace and chimney flue installation.
+keywords: stove,fitter,installer,installations,HETAS,Bristol,fireplace,multifuel stove,wood burning stove
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.independentstoveinstallations.co.uk" # the base hostname & protocol for your site
 company-description: |
