@@ -24,3 +24,5 @@ exclude:
   - config.ru
   - vendor
   - app.json
+gems:
+    - jekyll-sitemap
