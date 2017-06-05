@@ -409,3 +409,16 @@ body {
     }
   }
 }
+
+@media all and (max-width: 882px) {
+  .site-header {
+    .logo {
+      .site-title {
+        font-size: 40px;
+      }
+      .hetas-approved {
+        float: none;
+      }
+    }
+  }
+}
