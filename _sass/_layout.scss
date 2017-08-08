@@ -428,7 +428,11 @@ body {
       display: inline-block;
       list-style-type: none;
       li {
-        a { color: #fff; font-weight: bold; }
+        a { 
+          color: #fff;
+          font-weight: bold;
+          font-size: 26px;
+        }
       }
     }
   }
