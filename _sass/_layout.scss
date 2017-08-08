@@ -53,6 +53,7 @@
  * Site header
  */
 .site-header {
+  ul.contact { display: none; }
   margin: 14px 12px 0 12px;
   min-height: 120px;
   color: $header-text-color;
@@ -416,9 +417,24 @@ body {
       .site-title {
         font-size: 40px;
       }
-      .hetas-approved {
-        float: none;
+    }
+    .hetas-approved {
+      margin: 6px auto;
+      float: none;
+      clear:both;
+    }
+    ul.contact {
+      margin: 6px auto;
+      display: inline-block;
+      list-style-type: none;
+      li {
+        a { color: #fff; font-weight: bold; }
       }
     }
+  }
+  .home {
+    .page-body { width: 95%; }
+    .page-image { display: none }
+    .contact { display: none }
   }
 }
