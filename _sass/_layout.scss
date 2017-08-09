@@ -1,26 +1,23 @@
 @font-face {
-  font-family:"Guevara";
-  src: url("./guevara.ttf") /* TTF file for CSS3 browsers */
-}
-/**
- * Page wrapper
- */
+  font-family: 'Guevara';
+  src: url('./guevara.ttf'); }
+// Page wrapper
 .page-wrapper {
-   display: block;
-   margin:  4px auto 4px auto;
-   max-width: $page-max-width;
+  display: block;
+  margin: 4px auto;
+  max-width: $page-max-width;
 
-   .page-image {
-     float: left;
-     margin-right: 28px;
-   }
+  .page-image {
+    float: left;
+    margin-right: 28px;
+  }
 
-   .page-content {
-     width: 100%;
-   }
+  .page-content {
+    width: 100%;
+  }
 }
 
-/** page-body with image */
+// page-body with image
 .servicing {
   .page-body {
     ul {
@@ -28,17 +25,19 @@
     }
   }
 }
+
 .home {
   .page-body {
+    display: inline-block;
     width: 60%;
-    display: inline-block;
   }
+
   .contact {
+    border: 2px solid #000;
     display: inline-block;
-    float:right;
+    float: right;
     height: 200px;
     width: 200px;
-    border: 2px solid black;
     .inner {
       border: 1px solid black;
       margin: 2px;
@@ -90,21 +89,21 @@
   }
 
   .hetas-approved {
-    float:right;
+    float: right;
     margin-top: 18px;
 
     a {
+      background: url('/images/hetas-logo.png') no-repeat;
       display: inline-block;
-      width: 130px;
       height: 60px;
-      background: url("/images/hetas-logo.png") no-repeat;
       text-indent: -10000px;
+      width: 130px;
     }
   }
 
   .telephone {
+    margin: 2px auto;
     text-align: center;
-    margin: 2px auto 2px auto;
   }
 
   .site-nav {
@@ -395,11 +394,13 @@ body {
       display: inline-block;
       height: 129px;
       width: 129px;
+
       a {
-        height: 125px;
-        width: 125px;
         display: block;
+        height: 125px;
         overflow: hidden;
+        width: 125px;
+
         img {
           @include vertical-align;
           margin: 2px;
@@ -418,24 +419,29 @@ body {
         font-size: 30px;
       }
     }
+
     .hetas-approved {
-      margin: 6px auto;
+      clear: both;
       float: none;
-      clear:both;
-    }
-    ul.contact {
       margin: 6px auto;
+    }
+
+    ul.contact {
       display: inline-block;
       list-style-type: none;
+      margin: 6px auto;
+
       li {
-        a { 
+        a {
           color: #fff;
-          font-weight: bold;
           font-size: 26px;
+          font-weight: bold;
+          text-decoration: underline;
         }
       }
     }
   }
+
   .home {
     .page-body { width: 95%; }
     .page-image { display: none }
