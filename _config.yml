@@ -22,10 +22,13 @@ exclude:
   - unicorn.rb
   - README.md
   - Procfile
+  - Rakefile
   - Gemfile
   - Gemfile.lock
   - config.ru
   - vendor
   - app.json
+  - legacy-gallery.csv
+  - legacy-gallery-fullsize.csv
 gems:
-    - jekyll-sitemap
+  - jekyll-sitemap
