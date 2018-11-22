@@ -4,7 +4,7 @@ email: your-email@domain.com
 description: Hetas approved wood burner and multi fuel stove fitters, Bristol, UK. Stove, fireplace and chimney flue installation.
 keywords: stove,wood burner,fitter,installer,engineer,installations,HETAS,Bristol,fireplace,multifuel stove,wood burning stove
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.independentstoveinstallations.co.uk" # the base hostname & protocol for your site
+url: "https://independentstoveinstallations.co.uk" # the base hostname & protocol for your site
 company-description: |
   [HETAS approved stove installers](http://www.hetas.co.uk/consumer), Bristol, UK.
 telephone: |
