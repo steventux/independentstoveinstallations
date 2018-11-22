@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: favicon.ico
+Disallow: css/
+Disallow: lightbox/
+Disallow: googlede1fe642e7e65623.html
+Sitemap: https://independentstoveinstallations.co.uk/sitemap.xml
