@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Recent wood burner and multifuel stove installations
+title: Recent wood burner and mult ifuel stove installations
 permalink: /recent-installations/
 cdn: http://dns6oa2cqpo7v.cloudfront.net/
 ---
@@ -8,11 +8,13 @@ cdn: http://dns6oa2cqpo7v.cloudfront.net/
 <article>
   <div class="recent-installations">
     <h1 class="page-heading">{{ page.title}}</h1>
-    <p>We're very proud of the high quality work we do. Take a look at some of our recent installations and see for yourself...</p>
+    <p>We're very proud of the high quality work we do. Take a look at some of our recent stove installations and see for yourself...</p>
     <div class="gallery-wrapper">
       {% for item in site.data.recent-installations %}
       <div class="thumbnail-wrapper">
-        <a href="{{ page.cdn  }}{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations"><img src="{{ page.cdn }}{{ item.thumb}}" alt="{{ item.title }}"/></a>
+        <a href="{{ page.cdn  }}{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations">
+          <img src="{{ page.cdn }}{{ item.thumb}}" alt="{{ item.title }}"/>
+        </a>
       </div>
       {% endfor %}
     </div>
