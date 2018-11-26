@@ -32,5 +32,5 @@ exclude:
   - legacy-gallery.csv
   - legacy-gallery-fullsize.csv
   - firebase.json
-gems:
+plugins:
   - jekyll-sitemap
