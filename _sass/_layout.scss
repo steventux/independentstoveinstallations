@@ -64,6 +64,13 @@
   border-top-left-radius: $header-border-radius;
   border-top-right-radius: $header-border-radius;
 
+  .est {
+    font-family:serif;
+    float:left;
+    margin-top:32px;
+    max-width:80px;
+  }
+
   .logo {
     padding-top: 18px;
     display: inline-block;
@@ -408,6 +415,13 @@ body {
 
 @media all and (max-width: 882px) {
   .site-header {
+    .est {
+      float: none;
+      margin: 18px auto 2px auto;
+      max-width: 100%;
+      text-align: center;
+    }
+
     .logo {
       .site-title {
         font-size: 30px;
