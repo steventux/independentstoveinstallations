@@ -176,16 +176,7 @@
 }
 }
 
-.summer-deal {
-  position: relative;
-  top: -26px;
-  float: left;
-  display: inline-block;
-  height: 176px;
-  width: 216px;
-  background:url('/images/summer-deal.png') no-repeat;
-  text-indent: -10000px
-}
+
 
 .offers {
   font-family: Times New Roman, serif;
@@ -197,6 +188,17 @@
   background: linear-gradient(to right, #f67402, #ffcf00);
   margin: 23px auto 3px auto;
   text-align: center;
+
+  .summer-deal {
+    background: url('/images/summer-deal.png') no-repeat;
+    display: inline-block;
+    float: left;
+    height: 176px;
+    position: relative;
+    text-indent: -10000px;
+    top: -85px;
+    width: 216px;
+  }
 }
 
 
@@ -473,5 +475,11 @@ body {
     .page-body { width: 95%; }
     .page-image { display: none }
     .contact { display: none }
+  }
+
+  .offers {
+    .summer-deal {
+      display: none;
+    }
   }
 }
