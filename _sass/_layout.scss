@@ -207,6 +207,7 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
+    display: flex;
     padding: $spacing-unit 0;
 
     ul {

@@ -1,4 +1,6 @@
 # Site settings
+offline: false
+offline_message: Due to unforseen circumstances we're not booking new work for the time being.
 title: Wood burner fitters and multi fuel stove installers, Bristol
 company-name: Independent Stove Installations
 email: your-email@domain.com

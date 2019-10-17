@@ -5,13 +5,21 @@ title: Wood burner fitters and multi fuel stove installers, Bristol
 
 <article>
   <div class="home">
-    <h1 class="page-heading">{{ page.title }}</h1>
-    <div class="page-image">
-      <a href="/recent-installations/" title="{{ site.data.index.image.title }}">
-        <img src="{{ site.data.index.image.url }}" title="{{ site.data.index.image.title }}" alt="{{ site.data.index.image.alt }}"/>
-      </a>
-    </div>
-    <div class="page-body">{{ site.data.index.body | markdownify }}</div>
-    {% include contact.html %}
+      {% if site.offline %}
+        <div style="text-align:center">
+          <h1 class="page-heading">{{ site.offline_message }}</h1>
+        </div>
+      {% else %}
+        <h1 class="page-heading">{{ page.title }}</h1>
+        <div class="page-image">
+          <a href="/recent-installations/" title="{{ site.data.index.image.title }}">
+            <img src="{{ site.data.index.image.url }}" title="{{ site.data.index.image.title }}" alt="{{ site.data.index.image.alt }}"/>
+          </a>
+        </div>
+        <div class="page-body">
+          {{ site.data.index.body | markdownify }}
+        </div>
+        {% include contact.html %}
+      {% endif %}
   </div>
 </article>

@@ -3,7 +3,9 @@
   <div class="wrapper">
     <ul>
       <li>{{ site.company-description | markdownify }}</li>
-      <li>{{ site.telephone           | markdownify }}</li>
+      {% unless site.offline %}
+        <li>{{ site.telephone           | markdownify }}</li>
+      {% endunless %}
       <li>{{ site.copyright           | markdownify }}</li>
       <li>{{ site.credits             | markdownify }}</li>
     </ul>

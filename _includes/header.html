@@ -4,9 +4,11 @@
     <div class="logo"><a class="site-title" href="{{ site.baseurl }}/">{{ site.company-name }}</a></div>
     <div class="hetas-approved"><a href="http://www.hetas.co.uk" target="_new" title="HETAS approved installers">Hetas approved installers</a></div>
 
-    {% include navigation.html %}
+    {% unless site.offline %}
+      {% include navigation.html %}
 
-    {% include contact_header.html %}
+      {% include contact_header.html %}
+    {% endunless %}
 
   </div>
 </header>
