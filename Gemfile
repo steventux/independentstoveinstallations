@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.7.2'
 gem 'bundler'
-gem 'jekyll', '3.8.5'
+gem 'jekyll', '4.2.0'
 gem 'rack-jekyll', :git => 'https://github.com/adaoraul/rack-jekyll.git', :require => 'rack/jekyll'
 gem 'kramdown'
 gem 'rake'
