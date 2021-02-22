@@ -2,7 +2,7 @@
 .page-wrapper {
   display: block;
   margin: 4px auto;
-  max-width: $page-max-width;
+  max-width: 98%;
 
   .page-image {
     float: left;
@@ -76,7 +76,6 @@
     .est {
       flex-grow: 1;
       font-family:serif;
-      margin-top:32px;
     }
 
     .logo {
@@ -319,22 +318,14 @@ body {
 @media all and (max-width: 882px) {
   .site-header {
     .est {
-      float: none;
-      margin: 18px auto 2px auto;
       max-width: 100%;
       text-align: center;
     }
 
     .logo {
       .site-title {
-        font-size: 30px;
+        font-size: 7vw;
       }
-    }
-
-    .hetas-approved {
-      clear: both;
-      float: none;
-      margin: 6px auto;
     }
 
     .site-nav {
