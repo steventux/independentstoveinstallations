@@ -112,71 +112,28 @@
 
   .site-nav {
     font-size: 18px;
-    text-align: center;
-    line-height: 56px;
+    margin-top: 12px;
 
-    .menu-icon {
-        display: none;
+    ul {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        flex-grow: 1;
+      }
     }
 
     .page-link {
-        color: $navigation-text-color;
-        line-height: $base-line-height;
-        font-weight: bold;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+      color: $navigation-text-color;
+      line-height: $base-line-height;
+      font-weight: bold;
     }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+  }
 }
-}
-
-
 
 .offers {
   font-family: Times New Roman, serif;
@@ -431,29 +388,18 @@ body {
       }
     }
 
-    .site-nav {
-      background: url('/images/menu-icon.png') no-repeat;
-      border: none;
-      height: 30px;
-      left: 4px;
-      position: absolute;
-      top: 12px;
-      width: 50%;
-
-      .trigger {
-        margin-top: 30px;
-
-        .page-link {
-          background-color: #000;
-          margin-left: 0px;
-        }
-      }
-    }
-
     .hetas-approved {
       clear: both;
       float: none;
       margin: 6px auto;
+    }
+
+    .site-nav {
+      ul {
+        li {
+          flex-basis: 100%;
+        }
+      }
     }
 
     ul.contact {
