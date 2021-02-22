@@ -1,14 +1,13 @@
 <header class="site-header">
-  <div class="wrapper">
-    <div class="est">Established 2010</div>
+  <div class="header-box">
+    <div class="est">Established<br/>2010</div>
     <div class="logo"><a class="site-title" href="{{ site.baseurl }}/">{{ site.company-name }}</a></div>
     <div class="hetas-approved"><a href="http://www.hetas.co.uk" target="_new" title="HETAS approved installers">Hetas approved installers</a></div>
 
-    {% unless site.offline %}
-      {% include navigation.html %}
-
-      {% include contact_header.html %}
-    {% endunless %}
-
   </div>
+  {% unless site.offline %}
+    {% include navigation.html %}
+
+    {% include contact_header.html %}
+  {% endunless %}
 </header>
