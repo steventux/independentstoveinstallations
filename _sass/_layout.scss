@@ -14,15 +14,6 @@
   }
 }
 
-// page-body with image
-.servicing {
-  .page-body {
-    ul {
-      margin-left: 295px;
-    }
-  }
-}
-
 .home {
   .page-body {
     display: inline-block;
@@ -352,10 +343,11 @@ body {
   }
 
   .home {
-    .page-body { width: 95%; }
-    .page-image { display: none }
+    .page-body { width: 99%; }
     .contact { display: none }
   }
+
+  .page-image { display: none }
 
   .offers {
     .summer-deal {
