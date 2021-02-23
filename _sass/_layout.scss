@@ -288,16 +288,15 @@ body {
  *
  */
 .gallery-wrapper {
-  margin: 2px auto 2px auto;
+  margin: 4px auto 4px auto;
   text-align:center;
   .thumbnail-wrapper {
     text-align: center;
-    margin: 2px 0px 2px 0px;
+    margin: 4px;
     padding: 2px;
-    border: 1px solid #ccc;
     display: inline-block;
-    height: 129px;
-    width: 129px;
+    height: 125px;
+    width: 130px;
 
     a {
       display: block;
