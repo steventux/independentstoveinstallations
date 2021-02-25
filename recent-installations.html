@@ -2,8 +2,7 @@
 layout: default
 title: Recent wood burner and mult ifuel stove installations
 permalink: /recent-installations/
-cdn: http://resized-gallery-images.s3-website.eu-west-2.amazonaws.com/
-cdn_directory: isi-gallery/
+cdn: https://raw.githubusercontent.com/steventux/independentstoveinstallations/master/images/gallery/
 ---
 
 <article>
@@ -13,8 +12,8 @@ cdn_directory: isi-gallery/
     <div class="gallery-wrapper">
       {% for item in site.data.recent-installations %}
       <div class="thumbnail-wrapper">
-        <a href="{{ page.cdn  }}{{ page.cdn_directory }}{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations">
-          <img src="{{ page.cdn }}150x150/{{ page.cdn_directory }}{{ item.fullsize}}" alt="{{ item.title }}"/>
+        <a href="{{ page.cdn  }}{{ item.fullsize }}" data-title="{{ item.title }}" data-lightbox="installations">
+          <img src="{{ page.cdn }}thumbnails/{{ item.fullsize }}" alt="{{ item.title }}"/>
         </a>
       </div>
       {% endfor %}
